@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane fx:id="lblQue" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Q3Controller">
+   <children>
+      <VBox layoutX="54.0" layoutY="49.0" prefHeight="320.0" prefWidth="529.0">
+         <children>
+            <HBox prefHeight="21.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="lblQuestion" text="Question">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblQuestionNum" prefHeight="27.0" prefWidth="12.0" text="3">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ImageView fx:id="imgvQuestion" fitHeight="193.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../../file/imageLead/PixelImage3.png" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="39.0" prefWidth="486.0">
+               <children>
+                  <Label fx:id="lblAnswer" prefHeight="40.0" prefWidth="100.0" text="読みがな：">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtfAnswer" prefHeight="40.0" prefWidth="300.0" promptText="※ひらがなで入力してね！">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="btnNext" mnemonicParsing="false" onAction="#OnclickedBtnNext" prefHeight="40.0" prefWidth="70.0" text="次へ">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label prefHeight="40.0" text="※ひらがな答えてね！">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

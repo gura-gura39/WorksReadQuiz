@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AnswerController">
+   <children>
+      <VBox layoutX="21.0" layoutY="58.0" prefHeight="285.0" prefWidth="562.0">
+         <children>
+            <Label text="Answer">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="246.0" prefWidth="536.0">
+               <children>
+                  <VBox prefHeight="277.0" prefWidth="371.0">
+                     <children>
+                        <TextField fx:id="answersTitleRow">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="answer1">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="answer2">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="answer3">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="answer4">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField fx:id="answer5">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="186.0" prefWidth="229.0">
+                     <children>
+                        <TextField fx:id="txtfScore" />
+                        <TextField fx:id="txtfComment">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button fx:id="btbShowAnswer" mnemonicParsing="false" onAction="#showAnswer" text="答えを確認！！">
+                           <VBox.margin>
+                              <Insets left="10.0" top="25.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
